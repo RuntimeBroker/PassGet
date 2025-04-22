@@ -9,7 +9,7 @@ builds:
     goos:
       - windows
 #      - linux
-      - darwin
+#      - darwin
 #      - freebsd
 #      - solaris
     goarch:
@@ -31,8 +31,8 @@ upx:
   -
     ids: [ default ]
     enabled: true
-    goos: ["windows","darwin"]
-#    goos: ["windows"]
+#    goos: ["windows","darwin"]
+    goos: ["windows"]
     goarch: ["amd64","arm64"]
 #    goarch: ["amd64"]
     compress: best
