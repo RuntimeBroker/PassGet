@@ -5,7 +5,7 @@ builds:
   -
     id: default
     env:
-      - CGO_ENABLED=0
+      - CGO_ENABLED=2
     goos:
 #      - windows
 #      - linux
@@ -57,7 +57,6 @@ checksum:
 snapshot:
   name_template: "{{ incpatch .Version }}-next"
 changelog:
-  skip: true
   sort: asc
   filters:
     exclude:
