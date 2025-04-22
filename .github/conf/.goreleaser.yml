@@ -7,13 +7,13 @@ builds:
     env:
       - CGO_ENABLED=0
     goos:
-      - windows
+#      - windows
 #      - linux
-#      - darwin
+      - darwin
 #      - freebsd
 #      - solaris
     goarch:
-      - amd64
+#      - amd64
 #      - "386"
 #      - arm
       - arm64
@@ -32,8 +32,8 @@ upx:
     ids: [ default ]
     enabled: true
 #    goos: ["windows","darwin"]
-    goos: ["windows"]
-    goarch: ["amd64","arm64"]
+    goos: ["darwin"]
+    goarch: ["arm64"]
 #    goarch: ["amd64"]
     compress: best
 #    lzma: true
